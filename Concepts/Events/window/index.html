@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resize Example</title>
+  <style>
+    section, article {
+      height: 100px;
+      width: 100px;
+      border: solid;
+    }
+
+    section {
+      background-color: rebeccapurple;
+      transition: transform 5s ease 2s;
+    }
+
+    article {
+      background-color: black;
+      transition: transform 1s ease;
+    }
+  </style>
+</head>
+<body>
+  <section></section>
+  <article></article>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellat assumenda vel asperiores illum vero! Dolorum, eius sint explicabo quod, aspernatur id nulla nam ratione nesciunt fugit maiores aperiam voluptate!
+  Modi voluptas iusto animi, soluta non voluptatem alias nihil voluptatum fugiat. Accusantium aspernatur provident, commodi incidunt explicabo veritatis maiores, fugiat excepturi veniam debitis vero ea modi nihil consequatur, minus doloribus?
+  Amet ipsum velit unde, suscipit doloremque sequi doloribus quam adipisci nobis asperiores minima voluptatum, hic consectetur voluptatibus numquam quas. Aliquam beatae ratione quidem suscipit reiciendis veritatis nostrum nihil ab officia.
+  Maiores neque laboriosam illum totam doloribus quaerat repellendus nulla cumque, incidunt animi tenetur dolor quisquam accusantium qui unde at sint dicta nobis sapiente? Provident atque maxime ratione ex reiciendis explicabo?
+  Ratione fuga veniam facilis reiciendis hic laboriosam delectus illo, quidem voluptate pariatur nam magni consequuntur porro facere rem repellat! Magni reiciendis minus sit ad molestias sint eos, ullam ut voluptatum!
+  Illo a facilis molestias consectetur eaque maxime autem dolorum dolores quam. Optio, delectus fuga voluptatum nostrum ipsa culpa aut corporis atque nihil mollitia sapiente, accusamus assumenda illum deserunt illo. Aspernatur?
+  Possimus at animi assumenda, unde sit consequuntur eius voluptatum quas, aut quis facilis dolores odio aliquam exercitationem error, asperiores totam quia soluta! Esse eos eius vel odio ex odit accusantium!
+  Adipisci nihil praesentium itaque fugit harum, amet natus magni vel, culpa ea rem. Animi voluptatum veritatis officiis facilis suscipit voluptatibus eveniet laborum amet sint, sapiente fugiat, a vel quibusdam vero?
+  Hic repellendus exercitationem, id mollitia vero inventore corporis, veniam sit odio reiciendis minima! Dignissimos doloribus consequatur quas, quae, error et minus at fugit amet dolorum odio modi delectus nulla illo.
+  Dolorum voluptate ut accusamus, voluptates necessitatibus hic possimus harum fuga nulla enim facere laudantium. Quasi, repellat dolores. Inventore voluptate deleniti impedit repellat non adipisci exercitationem quidem debitis. Voluptate, cum illo.
+  Beatae adipisci aliquid quasi obcaecati sunt aspernatur dolorum molestias sed minima commodi unde veniam quidem ea, officiis inventore odit, illo doloremque. Veritatis eveniet, eos dolorem pariatur molestias laudantium repudiandae ratione?
+  Veritatis cupiditate dignissimos quasi sint non libero eveniet maiores. Delectus voluptatem necessitatibus fugit laborum nobis! Sit minima optio rerum natus sapiente eaque nesciunt. Iure cum illum aspernatur assumenda dolor consectetur?
+  Praesentium reiciendis dolorem eligendi numquam sed cum ab nostrum fuga delectus accusantium harum atque quis, commodi incidunt adipisci expedita similique facilis est odio. Quisquam odit dolor nesciunt ipsam, quos at!
+  Id rem deleniti eligendi esse vel iste incidunt dolor voluptate ut dolores itaque iusto totam quia repellendus aspernatur qui, aliquid eum magnam inventore corporis numquam ex officiis. Ex, sequi rerum.
+  Ad eligendi eveniet repellat qui vel nostrum possimus beatae accusamus velit, illo, maiores distinctio aperiam magnam, ex praesentium doloribus omnis dignissimos ipsa necessitatibus. Atque illo rerum eaque incidunt aliquid ullam!</p>
+
+  <script>
+    let section = document.querySelector("section");
+    let article = document.querySelector("article");
+
+    window.addEventListener("load", () => {
+      document.body.style.backgroundColor = "blue";
+      section.style.transform = "translateX(50px)";
+    });
+
+    window.addEventListener("scroll", () => {
+      article.style.transform = "translateY(100px)";
+    });
+
+    window.addEventListener("resize", () => {
+      article.style.color = "white";
+    });
+  </script>
+</body>
+</html>
